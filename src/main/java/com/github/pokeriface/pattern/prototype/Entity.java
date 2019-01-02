@@ -1,10 +1,10 @@
 package com.github.pokeriface.pattern.prototype;
 
 public class Entity {
-    private String sss;
+    private String str;
 
     public Entity(String s1) {
-        this.sss= s1;
+        this.str = s1;
     }
 
     @Override
@@ -12,7 +12,7 @@ public class Entity {
         boolean ret = false;
         if (that instanceof Entity) {
             Entity e = (Entity) that;
-            return this.sss.equals(e.sss);
+            return this.str.equals(e.str);
         }
         return ret;
     }

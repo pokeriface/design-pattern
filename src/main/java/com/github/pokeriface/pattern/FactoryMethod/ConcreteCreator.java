@@ -2,6 +2,7 @@ package com.github.pokeriface.pattern.FactoryMethod;
 
 public class ConcreteCreator extends Creator{
 
+    @SuppressWarnings("unchecked")
     public <T extends Product> T create(Class<T> c) {
         Product ret = null;
         try {
